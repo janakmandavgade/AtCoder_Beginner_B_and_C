@@ -10,19 +10,17 @@ int main(){
     for(int i = 0 ; i < n ; i++){
         cin>>v[i];
     }
-    // int i = 0;
-    int ans = 1;
+
+    int ans = v[0] - 1;;
     for(int i = 0 ; i < n ; i++){
-        if(i >= ans){
-            cout<< i <<endl;
+        if(ans < i){
+            cout<<i<<endl;
             return 0;
         }
 
-        ans = max(ans, i+v[i]);
+        ans = max(ans, i + v[i] - 1);
     }
 
     cout<<n<<endl;
-    // if(ans == 0) cout<<1<<endl;
-    // else cout<<ans<<endl;
     return 0;
 }
