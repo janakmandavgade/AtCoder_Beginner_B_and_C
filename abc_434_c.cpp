@@ -13,13 +13,19 @@ int main(){
 
     int lb = h, ub = h;
 
+    int curr_time = 0;
+
+
     for(int i = 0 ; i < n ; i++){
-        lb -= 1;
-        ub += 1;
-        
         int time = v[i][0];
         int allowed_lb = v[i][1];
         int allowed_ub = v[i][2];
+        
+        ll del = 
+        
+        lb -= 1;
+        ub += 1;
+        
 
         if(lb < allowed_lb || ub > allowed_ub){
             cout<<"No"<<endl;
